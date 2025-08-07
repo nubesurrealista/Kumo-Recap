@@ -10,10 +10,23 @@ body {
   color: #fff;
 }
 
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
 .container {
   max-width: 800px;
   padding: 2rem;
   text-align: center;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -28,16 +41,34 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-input[type="file"] {
-  display: block;
-  margin: 0 auto 1rem;
-  padding: 0.5rem;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-  color: #333;
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-button {
+.file-upload-label {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.file-upload-label:hover {
+  transform: scale(1.03);
+}
+
+.file-upload-label input[type="file"] {
+  display: none;
+}
+
+.cta-button {
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 25px;
@@ -49,24 +80,25 @@ button {
   transition: transform 0.2s;
 }
 
-button:hover {
+.cta-button:hover {
   transform: scale(1.05);
 }
 
 .recap {
   margin-top: 2rem;
+  width: 100%;
 }
 
 .recap.hidden {
   display: none;
 }
 
-.stats, .top-mangas, .top-authors, .top-genres {
-  margin-bottom: 2rem;
+.content-box {
   background: rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
 }
 
 h2 {
@@ -120,11 +152,17 @@ h2 {
   font-weight: bold;
 }
 
+.footer {
+  width: 100%;
+  padding: 1rem;
+  margin-top: auto;
+}
+
 .attribution {
-  margin-top: 2rem;
   font-size: 0.8rem;
   color: #e5e7eb;
   text-align: center;
+  padding: 1rem;
 }
 
 .attribution a {
