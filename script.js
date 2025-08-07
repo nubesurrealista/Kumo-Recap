@@ -121,7 +121,7 @@ function renderRecap() {
       const mangasHtml = topMangas.length > 0
         ? topMangas.map(manga => `
             <div class="manga-card">
-              <img src="${manga.thumbnailUrl || ''}" alt="${manga.title || 'Manga'}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/No_Image_%282879926%29_-_The_Noun_Project.svg/512px-No_Image_%282879926%29_-_The_Noun_Project.svg.png?20220813162604'">
+              <img src="${manga.thumbnailUrl || ''}" alt="${manga.title || 'Manga'}" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/No_Image_%282879926%29_-_The_Noun_Project.svg/768px-No_Image_%282879926%29_-_The_Noun_Project.svg.png?20220813162604'">
               <div>
                 <h3>${manga.title || 'Unknown Title'}</h3>
                 <p><strong>Author:</strong> ${manga.author || 'N/A'}</p>
