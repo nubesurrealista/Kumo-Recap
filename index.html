@@ -11,7 +11,7 @@
 <body>
   <main class="container">
     <h1>Kumo-Recap</h1>
-    <p class="intro">Upload your Mihon backup JSON to see your yearly recap!</p>
+    <p class="intro">Upload your Mihon backup JSON to see your 2025 recap!</p>
     <input type="file" id="json-input" accept=".json">
     <button onclick="renderRecap()">Show My Recap</button>
     <div id="recap" class="recap hidden">
@@ -22,6 +22,14 @@
       <section class="top-mangas">
         <h2>Top Mangas</h2>
         <div id="mangas-content"></div>
+      </section>
+      <section class="top-authors">
+        <h2>Top Authors</h2>
+        <div id="authors-content"></div>
+      </section>
+      <section class="top-genres">
+        <h2>Top Genres</h2>
+        <div id="genres-content"></div>
       </section>
     </div>
   </main>
