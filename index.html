@@ -11,8 +11,8 @@
 <body>
   <main class="container">
     <h1>Kumo-Recap</h1>
-    <p class="intro">Paste your Mihon backup JSON below to see your yearly recap!</p>
-    <textarea id="json-input" placeholder="Paste your JSON here..." rows="10"></textarea>
+    <p class="intro">Upload your Mihon backup JSON to see your yearly recap!</p>
+    <input type="file" id="json-input" accept=".json">
     <button onclick="renderRecap()">Show My Recap</button>
     <div id="recap" class="recap hidden">
       <section class="stats">
